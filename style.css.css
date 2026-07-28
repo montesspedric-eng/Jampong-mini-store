@@ -1,0 +1,350 @@
+html{
+    scroll-behavior:smooth;
+}/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(15,23,42,.9);
+
+    position:sticky;
+    top:0;
+
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#22c55e;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#22c55e;
+}
+
+/* Hero Section */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 8%;
+
+    min-height:90vh;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:60px;
+    line-height:1.2;
+}
+
+.hero-text p{
+    margin:25px 0;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+button{
+
+    padding:16px 35px;
+
+    border:none;
+
+    background:#22c55e;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 30px rgba(34,197,94,.5);
+
+}
+
+/* Image */
+
+.hero-image{
+    width:40%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* Cards */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    padding:70px 8%;
+}
+
+.card{
+
+    background:#1e293b;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:#22c55e;
+
+}
+
+.card p{
+    margin-top:15px;
+}
+
+/* Footer */
+
+footer{
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero-text,
+.hero-image{
+
+width:100%;
+
+}
+
+.hero-text{
+
+margin-bottom:40px;
+
+}
+
+.features{
+
+grid-template-columns:1fr;
+
+}
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:15px;
+
+}
+
+}
+.products{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.products h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.product{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(34,197,94,.35);
+}
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product h3{
+    margin:15px 0 10px;
+}
+
+.product p{
+    margin-bottom:20px;
+    color:#cbd5e1;
+}
+/* About Section */
+
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    padding:80px 8%;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+.contact{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.contact a{
+    color:#22c55e;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+}
+
+.modal-content{
+    background:#1e293b;
+    width:80%;
+    max-width:600px;
+    margin:60px auto;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.modal-content img{
+    width:100%;
+    border-radius:15px;
+    margin:20px 0;
+}
+
+.close{
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
