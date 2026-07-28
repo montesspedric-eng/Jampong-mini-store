@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spedric Mini Mart</title>
+
+    <link rel="stylesheet" href="style.css.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🏪 Spedric Mini Mart</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+            kailangan mo,<br>
+            Malapit lang sa bahay mo.
+        </h1>
+
+        <p>
+            Rice, snacks, soft drinks, canned goods,
+            eggs, and many more at affordable prices.
+        </p>
+
+        <button onclick="visitStore()">
+            Bisita diri, Our Store
+        </button>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="images/Store.png.png" alt="Our Store">
+    </div>
+
+</section>
+
+<section class="features">
+
+    <div class="card">
+        <h2>🥤 Drinks</h2>
+        <p>Cold soft drinks and bottled water.</p>
+    </div>
+
+    <div class="card">
+        <h2>🍚 Rice</h2>
+        <p>Quality rice at affordable prices.</p>
+    </div>
+
+    <div class="card">
+        <h2>🥫 Grocery</h2>
+        <p>Canned goods, noodles, coffee, and more.</p>
+    </div>
+
+</section>
+<section id="products" class="products">
+
+    <h2>🛒 Our Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="images/rice.jpg" alt="Rice">
+            <h3>Rice</h3>
+            <p>₱55 per kilo</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1641440616173-7241e6fe6be9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWluaSUyMG1hcnR8ZW58MHx8MHx8fDA%3D" alt="Soft Drinks">
+            <h3>The more the merrier</h3>
+            <p>modern and authentic</p>
+        </div>
+
+        <div class="product">
+            <img src="images/noodles.jpg" alt="Instant Noodles">
+            <h3>Instant Noodles</h3>
+            <p>Many flavors available</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="about" class="about">
+
+    <div class="about-text">
+
+        <h2>About Spedric Mini Mart</h2>
+
+        <p>
+            Welcome to Spedric Mini Mart! We provide affordable groceries,
+            snacks, drinks, rice, eggs, and other daily essentials.
+            Our goal is to serve the community with friendly service,
+            quality products, and fair prices.
+        </p>
+
+        <button>Learn More</button>
+
+    </div>
+
+    <div class="about-image">
+        <img src="images/about.jpg" alt="About Our Store">
+    </div>
+
+</section>
+<footer>
+
+    <p>© 2026 Jampong Mini Store</p>
+<section id="contact" class="contact">
+
+    <h2>📞 Contact Us</h2>
+
+    <p>Need something? Contact us anytime!</p>
+
+    <div class="contact-info">
+
+        <p>
+            📱
+            <a href="tel:+639656801072">
+                +63 965 680 1072
+            </a>
+        </p>
+
+        <p>
+            📧
+            <a href="mailto:Montesspedric@gmail.com">
+                Montesspedric@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📘
+            <a href="https://www.facebook.com/JimyCasero" target="_blank">
+                Facebook Page
+            </a>
+        </p>
+
+    </div>
+
+</section>
+</footer>
+<div id="storeModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>📍 Visit Our Store</h2>
+
+        <img src="images/store.png.png" alt="jampong Store">
+
+        <p><strong>Address:</strong> Barangay G,P,S imperial st. Koronadal City</p>
+
+        <p><strong>Phone:</strong> +63 9518117120</p>
+
+        <a href="https://maps.app.goo.gl/XtuPSDYLpo4bHkyJ7" target="_blank">
+            <button>Open in Google Maps</button>
+        </a>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
