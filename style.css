@@ -475,14 +475,21 @@ form button:hover{
     box-shadow:0 15px 35px rgba(0,0,0,.25);
     transition:opacity .5s;
 }
-/* Mobile Design */
-@media (max-width: 600px) {
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
 
-    body {
-        padding: 10px;
+    nav {
+        flex-direction: column;
+        text-align: center;
     }
 
     .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .hero {
         flex-direction: column;
         text-align: center;
     }
@@ -494,15 +501,15 @@ form button:hover{
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 2rem;
     }
 
     p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     button {
         width: 100%;
+        margin-top: 10px;
     }
-
 }
